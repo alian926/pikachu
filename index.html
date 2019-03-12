@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>皮神</title>
+  <style>
+  *{
+		margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    width: 100%;
+    height: 100%;
+    background: #f0e943;
+  }
+  body{
+    min-width: 1280px;
+    min-height: 600px;
+  }
+  div{
+    position: absolute;
+  }
+  .pika{
+    width: 80%;
+    height: 100%;
+    position: relative;
+  }
+  .ear-left{
+    right: 300px;
+    top: 30px;
+    width: 35px;
+    height: 50px;
+    background: #1d1111;
+    border-radius: 60px 60px 60px 60px/160px 120px 30px 10px;
+    transform: rotateY(20deg)
+  }
+  .ear-left::before{
+    content: "";
+    width: 34px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background: #f0e943;
+    top: 23px;
+    right: -0.5px;
+    transform: rotate(20deg);
+  }
+  .ear-right{
+    width: 0;
+    height: 0;
+    border-top: 55px solid #1d1111;
+    border-right: 100px solid transparent;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    right: 72px;
+    top: 100px;
+    transform: rotate(135deg)
+  }
+  .eye-left{
+    width: 25px;
+    height: 35px;
+    background: #270712;
+    border-radius: 60px 60px 60px 60px/100px 80px 80px 60px;
+    right: 310px;
+    top: 150px;
+    transform: rotateY(30deg);
+  }
+  .eye-left::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #f8f9f1;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+  }
+  .eye-right{
+    width: 40px;
+    height: 40px;
+    background: #270712;
+    border-radius: 50%;
+    right: 200px;
+    top: 165px;
+    transform: rotateY(30deg);
+  }
+  .eye-right::before{
+    content: "";
+    width: 17px;
+    height: 14px;
+    background: #f8f9f1;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+  }
+  .nose{
+    width: 15px;
+    height: 15px;
+    background: #4a3323;
+    transform: skew(-25deg) rotate(100deg);
+    top: 205px;
+    right: 270px;
+    border-radius: 5px 15px 10px 25px/5px 10px 5px 25px;
+  }
+  .face-right{
+    width: 45px;
+    height: 45px;
+    background: #d55629;
+    border-radius: 90px 90px 70px 70px/100px 100px 60px 60px;
+    top: 225px;
+    right: 165px;
+    transform: rotate(-20deg)
+  }
+  .face-left{
+    width: 0;
+    height: 0;
+    border-top: 15px solid #d55629;
+    border-right: 50px solid transparent;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    right: 315px;
+    top: 222px;
+    transform: rotate(80deg)
+  }
+  .mouse-left{
+    width: 16px;
+    height: 26px;
+    border: 3px solid #ad941d;
+    border-top: none;
+    border-right: none;
+    border-bottom-left-radius: 38px 40px;
+    transform: rotateZ(-53deg);
+    top: 232px;
+    right: 290px;
+  }
+  .mouse-right{
+    width: 26px;
+    height: 26px;
+    border: 3px solid #ad941d;
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 38px 27px;
+    transform: rotateZ(40deg);
+    top: 232px;
+    right: 256px;
+  }
+  .title1{
+    width: 25px;
+    height: 20px;
+    background: #a04d25;
+    transform: skew(25deg);
+    top: 325px;
+    right: 55px;
+  }
+  .title2{
+    width: 25px;
+    height: 40px;
+    background: #a04d25;
+    transform: skew(-25deg) rotate(36deg);
+    top: 296px;
+    right: 47px;
+  }
+  .title3{
+    width: 40px;
+    height: 30px;
+    background: #a04d25;
+    transform: skew(25deg) rotate(36deg);
+    top: 278px;
+    right: 51px;
+  }
+  </style>
+</head>
+<body>
+  <div class="pika">
+    <div class="ear-left"></div>
+    <div class="ear-right"></div>
+    <div class="eye-left"></div>
+    <div class="eye-right"></div>
+    <div class="nose"></div>
+    <div class="face-right"></div>
+    <div class="face-left"></div>
+    <div class="mouse-left"></div>
+    <div class="mouse-right"></div>
+    <div class="title1"></div>
+    <div class="title2"></div>
+    <div class="title3"></div>
+  </div>
+</body>
+</html>
